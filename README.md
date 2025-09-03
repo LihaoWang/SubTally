@@ -1,30 +1,101 @@
-# Subscription app creation
+# SubTally 📊
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+![SubTally Banner](https://files.leo63.xyz/banner1.png)
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/lihao-wangs-projects/v0-subscription-app-creation)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/projects/UWwA2vCL23w)
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19-blue?style=flat-square&logo=react)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-06B6D4?style=flat-square&logo=tailwindcss)](https://tailwindcss.com/)
 
-## Overview
+A privacy-first subscription tracker that helps you manage and monitor your recurring subscriptions. Built with Next.js 15, React 19, and TypeScript.
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+[中文文档](./README.zh.md) | [English](./README.md)
 
-## Deployment
+## 🚀 Quick Deploy
 
-Your project is live at:
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FLihaoWang%2FSubTally)
 
-**[https://vercel.com/lihao-wangs-projects/v0-subscription-app-creation](https://vercel.com/lihao-wangs-projects/v0-subscription-app-creation)**
+## ✨ Features
 
-## Build your app
+- **🎨 Minimal Design**: Clean, intuitive interface focused on essential functionality
+- **💱 Multi-Currency Support**: Track subscriptions in different currencies with exchange rate conversion
+- **📤 Import/Export**: JSON-based backup and restore functionality for easy data migration
+- **🔓 Open Source & Self-Hostable**: Fully open source with the ability to self-host on your own infrastructure
+- **🌗 Dark/Light Mode**: Toggle between themes with automatic system preference detection
+- **🌍 Multi-Language Support**: Full English and Chinese localization with browser language detection
+- **📱 Responsive Design**: Works seamlessly across desktop, tablet, and mobile devices
+- **🔒 Privacy-First**: All data stored locally in your browser - no external APIs or databases required
+- **⏰ Flexible Periods**: Track weekly, monthly, and yearly subscriptions with smart billing reminders
 
-Continue building your app on:
+## 🚀 Getting Started
 
-**[https://v0.app/chat/projects/UWwA2vCL23w](https://v0.app/chat/projects/UWwA2vCL23w)**
+### Prerequisites
 
-## How It Works
+- Node.js (version 18+)
+- pnpm
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/LihaoWang/SubTally
+cd SubTally
+
+# Install dependencies
+pnpm install
+
+# Start development server
+pnpm dev
+```
+
+Visit `http://localhost:3000` to view the application.
+
+## 📋 Available Scripts
+
+- `pnpm dev` - Start development server
+- `pnpm build` - Build for production
+- `pnpm start` - Start production server
+- `pnpm lint` - Run ESLint
+
+## 🏗️ Tech Stack
+
+- **Framework**: Next.js 15 with App Router
+- **Frontend**: React 19, TypeScript
+- **Styling**: Tailwind CSS v4
+- **UI Components**: Radix UI primitives with shadcn/ui
+- **Forms**: React Hook Form with Zod validation
+- **Icons**: Lucide React
+- **Theme**: next-themes
+
+## 📁 Project Structure
+
+```
+├── app/                    # Next.js app router pages
+├── components/             # Reusable UI components
+│   ├── ui/                # shadcn/ui components
+│   └── ...                # Feature components
+├── contexts/              # React context providers
+├── lib/                   # Utility functions and configurations
+├── hooks/                 # Custom React hooks
+└── public/                # Static assets
+```
+
+## 🌍 Internationalization
+
+The app supports English and Chinese with automatic browser language detection. Translations are managed through the `lib/i18n.ts` system with nested keys and parameter substitution.
+
+## 🎨 Theming
+
+Built-in light and dark mode support with system preference detection. Themes persist across sessions using localStorage.
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is private and proprietary.

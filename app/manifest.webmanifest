@@ -1,0 +1,7 @@
+{
+  "name": "SubTally",
+  "short_name": "SubTally",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
