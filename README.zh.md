@@ -98,4 +98,4 @@ pnpm dev
 
 ## 📄 许可证
 
-此项目为私有项目。
+此项目基于 [MIT 许可证](https://opensource.org/licenses/MIT)。
