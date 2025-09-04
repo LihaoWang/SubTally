@@ -120,4 +120,4 @@ Built-in light and dark mode support with system preference detection. Themes pe
 
 ## 📄 License
 
-This project is private and proprietary.
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
