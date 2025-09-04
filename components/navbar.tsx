@@ -64,7 +64,9 @@ export function Navbar({
       const url = URL.createObjectURL(dataBlob);
       const link = document.createElement("a");
       link.href = url;
-      link.download = `subscriptions-${new Date().toISOString().split("T")[0]}.json`;
+      // Use full timestamp (to the millisecond) and a stable prefix to avoid duplicate names
+      const safeIso = new Date().toISOString().replace(/[:.]/g, "-"); // e.g., 2024-09-05T00-12-34-567Z
+      link.download = `subtally-${safeIso}.json`;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);

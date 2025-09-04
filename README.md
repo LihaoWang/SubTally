@@ -27,6 +27,28 @@ A privacy-first subscription tracker that helps you manage and monitor your recu
 - **🔒 Privacy-First**: All data stored locally in your browser - no external APIs or databases required
 - **⏰ Flexible Periods**: Track weekly, monthly, and yearly subscriptions with smart billing reminders
 
+## 🎥 Feature Demos
+
+- Add Subscriptions: Quickly add new subscriptions with name, price, currency, period, and next billing date.
+
+  ![Add subscriptions](./demo/add_subs.gif)
+
+- Base Currency: Change your base currency to view normalized totals and conversions.
+
+  ![Base currency](./demo/base_currency.gif)
+
+- Import/Export: Backup and restore your data via JSON files.
+
+  ![Export and import](./demo/export_import.gif)
+
+- Language Switch: Toggle between English and Chinese with instant UI updates.
+
+  ![Language switch](./demo/language.gif)
+
+- Theme Toggle: Switch between light and dark themes; follows system preference.
+
+  ![Theme toggle](./demo/theme.gif)
+
 ## 🚀 Getting Started
 
 ### Prerequisites
