@@ -16,39 +16,48 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "SubTally - Manage Your Digital Subscriptions",
-    template: "%s | SubTally"
+    default: "SubTally - Privacy-First Subscription Tracker & Manager",
+    template: "%s | SubTally - Subscription Management"
   },
-  description: "Track and manage all your digital subscriptions in one place. Monitor spending, get billing reminders, and take control of your recurring payments.",
-  keywords: ["subtally", "subscription tracker", "subscription management", "billing tracker", "recurring payments", "digital subscriptions", "expense tracking", "budget management"],
-  authors: [{ name: "SubTally" }],
+  description: "Take control of your digital subscriptions with SubTally - a privacy-first, offline subscription tracker. Monitor spending, get billing alerts, and manage recurring payments without sharing your data.",
+  keywords: [
+    "subscription tracker", "subscription management", "privacy-first subscription tracker", 
+    "billing tracker", "recurring payments", "digital subscriptions", "expense tracking", 
+    "budget management", "offline subscription manager", "privacy subscription app",
+    "subscription reminder", "spending analysis", "subscription analytics", 
+    "personal finance", "subscription organizer", "billing alerts"
+  ],
+  authors: [{ name: "SubTally", url: "https://subtally.com" }],
   creator: "SubTally",
   publisher: "SubTally",
   
   // Open Graph (Facebook, LinkedIn)
   openGraph: {
-    title: "SubTally - Manage Your Digital Subscriptions",
-    description: "Track and manage all your digital subscriptions in one place. Monitor spending, get billing reminders, and take control of your recurring payments.",
+    title: "SubTally - Privacy-First Subscription Tracker & Manager",
+    description: "Take control of your digital subscriptions with SubTally - a privacy-first, offline subscription tracker. Monitor spending, get billing alerts, and manage recurring payments without sharing your data.",
     url: "https://subtally.com",
     siteName: "SubTally",
     images: [
       {
-        url: "https://subtally.com/og-image.png",
+        url: "https://files.leo63.xyz/banner1.png",
         width: 1200,
         height: 630,
-        alt: "SubTally Dashboard - Subscription Management Interface"
+        alt: "SubTally Dashboard - Privacy-first subscription tracker showing subscription overview, spending analysis, and billing management interface"
       }
     ],
     locale: "en_US",
     type: "website",
+    countryName: "Global",
   },
   
   // Twitter
   twitter: {
     card: "summary_large_image",
-    title: "SubTally - Manage Your Digital Subscriptions",
-    description: "Track and manage all your digital subscriptions in one place. Monitor spending, get billing reminders, and take control of your recurring payments.",
-    images: ["https://subtally.com/twitter-image.png"],
+    title: "SubTally - Privacy-First Subscription Tracker & Manager",
+    description: "Take control of your digital subscriptions with SubTally - a privacy-first, offline subscription tracker. Monitor spending, get billing alerts, and manage recurring payments without sharing your data.",
+    images: ["https://files.leo63.xyz/banner1.png"],
+    creator: "@SubTally",
+    site: "@SubTally",
   },
   
   // App-specific
@@ -74,11 +83,29 @@ export const metadata: Metadata = {
   
   // Alternate languages for i18n
   alternates: {
+    canonical: "https://subtally.com",
     languages: {
-      'en': '/en',
-      'zh': '/zh',
+      'en': 'https://subtally.com/en',
+      'zh': 'https://subtally.com/zh',
     },
   },
+  
+  // Additional SEO
+  metadataBase: new URL('https://subtally.com'),
+  formatDetection: {
+    telephone: false,
+    date: false,
+    address: false,
+    email: false,
+    url: false,
+  },
+}
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
 }
 
 export default async function RootLayout({

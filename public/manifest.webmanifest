@@ -1,0 +1,43 @@
+{
+  "name": "SubTally - Privacy-First Subscription Tracker",
+  "short_name": "SubTally",
+  "description": "Take control of your digital subscriptions with SubTally - a privacy-first, offline subscription tracker. Monitor spending, get billing alerts, and manage recurring payments without sharing your data.",
+  "start_url": "/app",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "categories": ["business", "finance", "productivity", "utilities"],
+  "lang": "en",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "https://files.leo63.xyz/banner1.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://files.leo63.xyz/banner1.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://files.leo63.xyz/banner1.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "SubTally Dashboard - Main subscription management interface"
+    }
+  ],
+  "features": [
+    "Privacy-first subscription tracking",
+    "Offline functionality",
+    "Bilingual support (English/Chinese)",
+    "Dark/light theme",
+    "Export/import data"
+  ]
+}
